@@ -54,7 +54,7 @@ function Titulo(props){
             as="form"
             onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
-              roteamento.push('/chat');
+              roteamento.push(`/chat?username=${username}`);
 
           }}
             styleSheet={{
